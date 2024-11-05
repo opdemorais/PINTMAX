@@ -1,0 +1,132 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0dada;
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #87f053;
+    color: rgb(174, 11, 11);
+    padding: 20px;
+    border-radius: 12PX;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    color: black;
+}
+
+/* Navegação */
+nav {
+    background-color: #778588;
+    border-radius: 12PX;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(206, 15, 15);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção Sobre */
+#sobre {
+    padding: 20px;
+}
+
+#sobre h2 {
+    color: #0077b6;
+    margin-bottom: 15px;
+}
+
+/* Cards de Serviços */
+#servicos {
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: rgb(176, 194, 199);
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Seção Contato */
+#contato {
+    padding: 20px;
+}
+
+#contato button {
+    background-color: #25D366;
+    color: rgb(185, 17, 17);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contato button:hover {
+    background-color: #128C7E;
+}
+
+/* Footer */
+footer {
+    background-color: #005f73;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+}
